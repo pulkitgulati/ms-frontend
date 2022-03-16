@@ -1,9 +1,9 @@
 export const msalConfig = {
     auth: {
-      clientId: "4bd8398e-4893-4ab6-b49c-3015a770174b",
-      authority: "https://login.microsoftonline.com/4eea6844-62c2-4421-8b17-472c57875f31", // This is a URL (e.g. https://login.microsoftonline.com/{your tenant ID})
+      clientId: "xxxx",
+      authority: "xxxx", // This is a URL (e.g. https://login.microsoftonline.com/{your tenant ID})
       //redirectUri: "http://localhost:3000/",
-      redirectUri: "https://msfrontendform.azurewebsites.net/",
+      redirectUri: "https://myfrontend.azurewebsites.net/",
     },
     cache: {
       cacheLocation: "sessionStorage", // This configures where your cache will be stored
