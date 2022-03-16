@@ -75,7 +75,7 @@ namespace NameMicroservice.Controllers
             {
                 var nameData = new NameData() { FirstName = requestPayload.FirstName, MiddleName = requestPayload.MiddleName, LastName = requestPayload.LastName };
                 string personid = _nameService.InsertNameData(nameData);
-                var addressData = new AddressData() { PersonId = Convert.ToInt32(personid), Address = requestPayload.Address, Phone = requestPayload.Phone, Email = requestPayload.Email };
+                var addressData = new AddressData() { PersonID = Convert.ToInt32(personid), Address = requestPayload.Address, Phone = requestPayload.Phone, Email = requestPayload.Email };
                 await _topicSender.SendMessage(addressData).ConfigureAwait(false);
                 nameData.PersonID = Convert.ToInt32(personid);
                 await _queueSender.SendMessage(nameData).ConfigureAwait(false);

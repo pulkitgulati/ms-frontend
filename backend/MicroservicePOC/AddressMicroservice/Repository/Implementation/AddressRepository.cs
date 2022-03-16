@@ -26,7 +26,7 @@ namespace NameMicroservice.Repository.Implementation
             {
 
                 AddressData addressData = new AddressData();
-                addressData.PersonId =Convert.ToInt32(HandleNull(dataSet.Tables[0].Rows[0]["PersonId"]));
+                addressData.PersonID =Convert.ToInt32(HandleNull(dataSet.Tables[0].Rows[0]["PersonId"]));
                 addressData.Address = HandleNull(dataSet.Tables[0].Rows[0]["Address"]);
                 addressData.Phone = HandleNull(dataSet.Tables[0].Rows[0]["Phone"]);
                 addressData.Email = HandleNull(dataSet.Tables[0].Rows[0]["Email"]);
@@ -48,7 +48,7 @@ namespace NameMicroservice.Repository.Implementation
                 foreach (DataRow dr in dataSet.Tables[0].Rows)
                 {
                     AddressData addressData = new AddressData();
-                    addressData.PersonId = Convert.ToInt32(HandleNull(dr["PersonId"]));
+                    addressData.PersonID = Convert.ToInt32(HandleNull(dr["PersonId"]));
                     addressData.Address = HandleNull(dr["Address"]);
                     addressData.Phone = HandleNull(dr["Phone"]);
                     addressData.Email = HandleNull(dr["Email"]);
@@ -68,7 +68,7 @@ namespace NameMicroservice.Repository.Implementation
         public bool InsertAddressData(AddressData addressData)
         {
             SqlParameter[] sqlParameters = new SqlParameter[] {
-                new SqlParameter("PersonId",addressData.PersonId),
+                new SqlParameter("PersonId",addressData.PersonID),
                 new SqlParameter("Address",addressData.Address),
                 new SqlParameter("Phone",addressData.Phone),
                 new SqlParameter("Email",addressData.Email)

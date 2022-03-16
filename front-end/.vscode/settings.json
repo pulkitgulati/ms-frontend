@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/1bcd68af-e392-4b66-9558-697bd7e8dc91/resourceGroups/mspoc-rg/providers/Microsoft.Web/sites/msfrontendform",
+    "appService.deploySubpath": "build"
+}

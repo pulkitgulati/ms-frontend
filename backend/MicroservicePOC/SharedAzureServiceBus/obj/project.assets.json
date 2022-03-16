@@ -3243,19 +3243,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\raizsu\\.nuget\\packages\\": {}
+    "C:\\Users\\GULAPU\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Data\\My Projects\\Microservice with ServiceBus\\MicroservicePOC\\SharedAzureServiceBus\\SharedAzureServiceBus.csproj",
+      "projectUniqueName": "C:\\Dev Azure\\MicroservicePOC\\backend\\MicroservicePOC\\SharedAzureServiceBus\\SharedAzureServiceBus.csproj",
       "projectName": "SharedAzureServiceBus",
-      "projectPath": "C:\\Data\\My Projects\\Microservice with ServiceBus\\MicroservicePOC\\SharedAzureServiceBus\\SharedAzureServiceBus.csproj",
-      "packagesPath": "C:\\Users\\raizsu\\.nuget\\packages\\",
-      "outputPath": "C:\\Data\\My Projects\\Microservice with ServiceBus\\MicroservicePOC\\SharedAzureServiceBus\\obj\\",
+      "projectPath": "C:\\Dev Azure\\MicroservicePOC\\backend\\MicroservicePOC\\SharedAzureServiceBus\\SharedAzureServiceBus.csproj",
+      "packagesPath": "C:\\Users\\GULAPU\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev Azure\\MicroservicePOC\\backend\\MicroservicePOC\\SharedAzureServiceBus\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\raizsu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\GULAPU\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3305,7 +3305,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
