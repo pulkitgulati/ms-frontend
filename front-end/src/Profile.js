@@ -61,21 +61,21 @@ function Profile() {
   const getData = () => {
     axios({
       method: 'post',
-      url: 'https://mspocauth.azurewebsites.net/Authentication/Token',
+      url: 'https://testauthurl.azurewebsites.net/Authentication/Token',
       headers: {
         'Cookie': 'ARRAffinity=0f2ba6f32722b5372246745155b9aa8f1968d09c71e7a67cc711750fef8a3f91; ARRAffinitySameSite=0f2ba6f32722b5372246745155b9aa8f1968d09c71e7a67cc711750fef8a3f91',
         'Content-Type': 'application/json',
         },
       data: {
         "username": "demo",
-        "password": "demo@123"
+        "password": "xx"
       }
     }).then(auth=>{
       console.log(auth.data);
       setToken(auth.data.token);
       axios({
         method: 'get',
-        url: 'https://msprofiletobus-apim.azure-api.net/Name/getallname',
+        url: 'https://testurl-apim.azure-api.net/Name/getallname',
         headers: {
         'Authorization': `bearer ${auth.data.token}`,
         'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ function Profile() {
         //fetch addresses
         axios({
           method: 'get',
-          url: 'https://msprofiletobus-apim.azure-api.net/addr/Address/GetAllAddresses',
+          url: 'https://testurl-apim.azure-api.net/addr/Address/GetAllAddresses',
           headers: {
           'Authorization': `bearer ${auth.data.token}`,
           'Content-Type': 'application/json',
@@ -136,7 +136,7 @@ function Profile() {
     console.log(payload);
     axios({
       method: 'post',
-      url: 'https://msprofiletobus-apim.azure-api.net/Name/CreateProfile',
+      url: 'https://testurl-apim.azure-api.net/Name/CreateProfile',
       data: payload, // you are sending body instead
       headers: {
       'Authorization': `bearer ${token}`,
