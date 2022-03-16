@@ -1,3 +1,0 @@
-is_global = true
-build_property.RootNamespace = SharedAzureServiceBus
-build_property.ProjectDir = C:\Dev Azure\MicroservicePOC\backend\MicroservicePOC\SharedAzureServiceBus\
